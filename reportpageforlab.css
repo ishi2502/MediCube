@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* .............................Navbar............................. */
+
+body {
+  font-family: "Poppins",  sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: #e6851a;
+  height: 100%;
+  width: 50px;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  justify-content: center;
+}
+.nav-item img {
+  height: 30px;
+  width: 30px;
+}
+
+/* .............................Lab Login page............................. */
+
+.rightimg {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 30%;
+  background-image: contain;
+  margin-top: 7%;
+}
+
+#secondhalf {
+  position: relative;
+  left: 5rem;
+  top: 0px;
+  padding: 40px 30px 30px 30px;
+  width: 70%;
+}
+
+#secondHalf #newreport {
+  position: relative;
+  background-color: #555ba5;
+  left: 20px;
+  padding: 10px 10px 10px 10px;
+  color: white;
+  display: flex;
+  border-radius: 5px;
+  width: 40%;
+}
+
+.reportElement {
+  display: flex;
+  align-items: center;
+  border: 3px solid #555ba5;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  font-size: 20px;
+  width: 72%;
+}
+
+.Pname {
+  text-transform: capitalize;
+}
+.Pname,
+.Pemail {
+  color: #ea9c45;
+}
+
+.Pemail {
+  font-size: 15px;
+}
+
+.type {
+  color: #555ba5;
+}
+
+#inputElement,
+#inputElement2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  border: 3px solid #ea9c45;
+  border-radius: 15px;
+  padding: 10px 30px;
+  margin: 20px;
+  font-size: 15px;
+  width: 70%;
+}
+#inputElement input {
+  text-align: center;
+  margin-bottom: 20px;
+  border: 2px solid #555ba5;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.inputbtn,
+.upload {
+  background-color: #e6851a;
+  padding: 10px;
+  text-align: center;
+  width: 90%;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#inputElement div:first-child {
+  flex-grow: 2;
+}
+
+#inputElement2 div:first-child {
+  flex-grow: 2;
+}
+
+.numberingbtn {
+  background-color: #ea9c45;
+  float: right;
+  padding: 10px 20px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#inputElement2 select {
+  width: 40%;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 2px solid #555ba5;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+#inputElement2 input[type="file"] {
+  width: 90%;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 2px solid #555ba5;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+#inputElement img {
+  height: 300px;
+  width: 300px;
+  margin-left: 20px;
+}
+
+#inputElement2 img {
+  height:300px;
+  width:300px;
+  margin-left:20px;
+}
+
+
+.reportElement img {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  #inputElement img,#inputElement2 img
+  {
+    height: 200px;
+    width: 200px;
+  }
+
+  #inputElement input {
+    font-size: 10px;
+    width: 90%;
+  }
+  #inputElement2 select {
+    font-size: 15px;
+    width: 60%;
+  }
+
+  #inputElement2 input[type="file"] {
+    font-size: 12px;
+    border-radius: 10px;
+    width: 90%;
+  }
+  .inputbtn,
+  .upload {
+    width: 90%;
+  }
+  .numberingbtn {
+    font-size: 15px;
+  }
+  #inputElement p,
+  #inputElement2 p {
+    font-size: 15px;
+  }
+  #inputElement,
+  #inputElement2 {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  nav {
+    width: 40px;
+    position: fixed;
+    overflow-y: hidden;
+  }
+
+  .rightimg {
+    display: none;
+  }
+  .reportElement {
+    width: 95%;
+  }
+  #inputElement,#inputElement2 {
+    width: 92%;
+  }
+
+  #secondhalf {
+    left: 40px;
+    width: 80%;
+  }
+  #secondHalf #newreport {
+    width: 50%;
+  }
+  #inputElement2 p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  #inputElement2 img {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #inputElement img{
+    width: 100px;
+  }
+  #secondhalf {
+    left: 30px;
+    width: 75%;
+  }
+  .Pname,
+  .type {
+    font-size: 15px;
+  }
+  .Pemail {
+    font-size: 12px;
+  }
+  .reportElement img {
+    width: 25px;
+    height: 25px;
+  }
+  .reportElement {
+    width: 90%;
+  }
+  .numberingbtn {
+    font-size: 10px;
+  }
+  #inputElement p {
+    font-size: 10px;
+  }
+  #inputElement ,#inputElement2{
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #inputElement p,#inputElement2 p {
+    font-size: 8px;
+  }
+  #inputElement img,#inputElement2 img{
+    width: 80px;
+    margin: 0px;
+  }
+  .numberingbtn {
+    padding: 5px;
+    font-size: 8px;
+  }
+  #inputElement input,
+  #inputElement2 input[type="file"],#inputElement2 select,
+  .inputbtn,.upload {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+}
+@media screen and (max-width: 410px) {
+  #secondHalf #newreport {
+    width: 60%;
+    font-size: 15px;
+  }
+  #secondhalf {
+    left: 10px;
+    width: 75%;
+  }
+  .reportElement img {
+    width: 20px;
+    height: 20px;
+  }
+  .Pname,
+  .type {
+    font-size: 12px;
+  }
+  .reportElement {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .Pname,
+  .type,
+  .Pemail {
+    font-size: 10px;
+  }
+  .reportElement {
+    width: 85%;
+    padding: 10px;
+  }
+  .reportElement img {
+    width: 10px;
+    height: 10px;
+  }
+  #secondHalf #newreport {
+    width: 60%;
+    font-size: 10px;
+  }
+  
+}

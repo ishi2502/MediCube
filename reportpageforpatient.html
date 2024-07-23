@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Page For Patients</title>
+    <link rel="stylesheet" href="./reportpageforpatient.css">
+    <script src="firebase/loginlogout.js" type="module"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-item"><img src="assets/home-icon-silhouette 1.png"></a>
+        <a href="" id="checkusertype" class="nav-item"><img src="assets/report 1.png"></a>
+        <a href="associatedlabs.html" class="nav-item"><img src="assets/microscope (1) 1.png"></a>
+        <a id="Login_button" class="nav-item"><img src="assets/add-user 1.png"></a>
+        <a id="out_Btn" class="nav-item"><img src="assets/logout.png"></a>
+    </nav>
+        <div id="text">
+            <img src="./assets/image 10.png">
+            Select the type of report you want to see
+        </div>
+        <section>
+        <div id="reporttype">
+            <img src="assets/image 13.png">
+            <div id="typename">
+                <h2>X-RAY</h2>
+                <button id=""  onclick="window.location.href='patientreports.html?'+'xray'"><span><img src="assets/arrow.png"></span></button>
+            </div>
+        </div>
+
+        <div id="reporttype">
+            <img src="assets/ctscan.jpg">
+            <div id="typename">
+                <h2>CT SCAN</h2>
+                <button id="" onclick="window.location.href='patientreports.html?'+'ctscan'"><span><img src="assets/arrow.png"></span></button>
+
+            </div>
+        </div>
+        <div id="reporttype">
+            <img src="assets/blood.jpg">
+            <div id="typename">
+                <h2>BLOOD TEST</h2>
+                <button id="" onclick="window.location.href='patientreports.html?'+'bloodtest'"><span><img src="assets/arrow.png"></span></button>
+
+            </div>
+        </div>
+        <div id="reporttype">
+            <img src="assets/urinetest.jpg">
+            <div id="typename">
+                <h2>URINE TEST</h2>
+                <button id="" onclick="window.location.href='patientreports.html?'+'urinetest'"><span><img src="assets/arrow.png"></span></button>
+
+            </div>
+        </div>
+        <div id="reporttype">
+            <img src="assets/mri.png">
+            <div id="typename">
+                <h2>MRI</h2>
+                <button id="" onclick="window.location.href='patientreports.html?'+'mri'"><span><img src="assets/arrow.png"></span></button>
+
+            </div>
+        </div>
+        <div id="reporttype">
+            <img src="assets/biopsy.jpg">
+            <div id="typename">
+                <h2>BIOPSY</h2>
+                <button id="" onclick="window.location.href='patientreports.html?'+'biopsy'"><span><img src="assets/arrow.png"></span></button>
+
+            </div>
+        </div>
+        <div id="reporttype">
+            <img src="assets/ultrasound.jpg">
+            <div id="typename">
+                <h2>ULTRA SOUND</h2>
+                <button id="" onclick="window.location.href='patientreports.html?'+'ultrasound'"><span><img src="assets/arrow.png"></span></button>
+
+            </div>
+        </div>
+        <div id="reporttype">
+            <img src="assets/ecg.jpg">
+            <div id="typename">
+                <h2>ECG</h2>
+                <button id="" onclick="window.location.href='patientreports.html?'+'ecg'"><span><img src="assets/arrow.png"></span></button>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

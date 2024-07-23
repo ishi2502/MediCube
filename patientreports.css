@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline:1px solid black; */
+}
+
+a{
+    cursor: pointer;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.rightimg {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 30%;
+    background-image: contain;
+    margin-top: 7%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    background-color: #E6851A;
+    height: 100%;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top:0px;
+    left:0px;
+}
+
+.nav-item img {
+    height: 30px;
+    width: 30px;
+}
+
+#section1 h1 {
+    color: #555BA5;
+    text-align: center;
+    text-transform: uppercase;
+    padding-right: 2rem;
+}
+
+#section1 {
+    /* position: relative; */
+    /* top: 20px; */
+    margin-left: 120px;
+    top: 7vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* justify-content: center; */
+    gap: 2rem;
+    /* background-color: #555BA5; */
+    border: 2px solid #E6851A;
+    width: 40vw;
+    padding: 2px 10px;
+    font-size: larger;
+    max-width: fit-content;
+}
+
+#section1 img {
+    height: 3.3rem;
+    width: 3rem;
+}
+
+#mainsection {
+    padding-top: 40px;
+
+}
+
+#section2 {
+    position: relative;
+    left: 70px;
+    top: 0px;
+    padding: 40px 30px 30px 30px;
+    width: 70%;
+
+}
+
+.report {
+    display: flex;
+    align-items: center;
+    border: 3px solid #555ba5;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    font-size: 20px;
+    width: 70%;
+
+}
+
+.Lname{
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-bottom: 8px;
+    font-size: 30px;
+}
+
+.time{
+    color: #ea9c45;
+    font-size: 13px;
+}
+.report img{
+    width:30px;
+    height:30px;
+}
+
+@media screen and (max-width:900px) {
+
+    nav {
+        width: 40px;
+        position: fixed;
+        overflow-y: hidden;
+    }
+    
+    .rightimg{
+        display: none;
+    }
+    #section2{
+        width:80%;
+        margin: 0px;
+    }
+    .report{
+        margin-right:0px;
+        width:80%;
+    }
+}
+
+@media screen and (max-width:450px){
+    #typeofrep{
+        font-size: 30px;
+    }
+
+    #section1 h1{
+        gap:5px
+    }
+    #section1{
+        padding: 0px 4px;
+        align-items: center;
+        margin-left: 70px;
+    }
+    #section1 img{
+        height:30px;
+        width:30px;
+    }
+    .report .Lname{
+        font-size: 20px;
+    }
+    .report .time{
+        font-size: 12px;
+    }
+    .report img{
+        height: 20px;
+        width: 20px;
+    }
+    .report{
+        width:80%;
+    }
+    #section2{
+        left:30px;
+    }
+
+}
+
+@media screen and (max-width:350px){
+    #typeofrep{
+        font-size: 25px;
+    }
+    #section1 img{
+        height:20px;
+        width:30px;
+    }
+    #section1{
+        gap:20px;
+    }
+    .report .time{
+        font-size: 10px;
+    }
+    .report img{
+        height: 15px;
+        width: 15px;
+    }
+
+}

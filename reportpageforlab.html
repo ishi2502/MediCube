@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Login</title>
+    <link rel="stylesheet" href="reportpageforlab.css">
+</head>
+<script src="firebase/reportpage.js" type="module"></script>
+<script src="firebase/loginlogout.js" type="module"></script>
+
+<body>
+    <nav>
+        <a href="index.html" class="nav-item"><img src="assets/home-icon-silhouette 1.png"></a>
+        <a href="" id="checkusertype" class="nav-item"><img src="assets/report 1.png"></a>
+        <a href="associatedlabs.html" class="nav-item"><img src="assets/microscope (1) 1.png"></a>
+        <a id="Login_button" class="nav-item"><img src="assets/add-user 1.png"></a>
+        <a id="out_Btn" class="nav-item"><img src="assets/logout.png"></a>
+    </nav>
+
+    <div class="rightimg">
+        <img src="assets/lab login right image.jpg" style="height:80vh;width:100%;">
+    </div>
+    <div id="secondhalf">
+        <div id="newreport">
+            <p style="flex-grow: 2;">Add new report</p>
+            <div class="addinp" style="cursor: pointer;"><img src="assets/plus1.png" style="width:20px;height: 20px;">
+            </div>
+        </div>
+        <div id="inputElement">
+            <div>
+                <p style="margin:0px 0px 20px 0px;color: gray;">Enter details of the patient whose report you want to
+                    upload :
+                </p>
+                <div><input type="text" placeholder="Enter Patient's name"></div>
+                <div><input type="email" placeholder="Enter Patient's email Id"></div>
+                <button class="inputbtn">Next</button>
+            </div>
+            <div>
+                <button class="numberingbtn">1</button>
+                <img src="assets/report3.png" >
+            </div>
+        </div>
+        <div id="inputElement2">
+            <div>
+                <p style="margin:0px 0px 20px 0px;color: gray;">Uploading report files for user with email id
+                </p>
+                <select id="reportType" name="type" required>
+                    <option value="xray">X-ray</option>
+                    <option value="mri">MRI</option>
+                    <option value="ctscan">CT-Scan</option>
+                    <option value="bloodtest">Blood Test</option>
+                    <option value="urinetest">Urine Test</option>
+                    <option value="biopsy">Biopsy</option>
+                    <option value="ultrasound">Ultrasound</option>
+                    <option value="ecg">ECG</option>
+                </select>
+                <div><input type="file" accept="application/pdf" placeholder="Upload files here"></div>
+                <button class="upload">Upload</button>
+            </div>
+            <div>
+                <button class="numberingbtn">2</button>
+                <img src="assets/report3.png" >
+            </div>
+        </div>
+        <div id="reportElements">
+            <!-- <div class="reportElement">
+                <div style="flex-grow: 3;">
+                    <p class="Pname">Name </p>
+                    <p class="Pemail">Email</p>
+                    <p class="type">Type of report</p>
+                </div>
+                <div>
+                    <img src="assets/pencil 1.png" style="width:30px;height: 30px;">
+                    <img src="assets/delete 2.png" style="width:30px;height: 30px;">
+                </div>
+            </div> -->
+        </div>
+    </div>
+    </div>
+    <script src="firebase/reportpageforlab.js" type="module"></script>
+
+</body>
+
+</html>

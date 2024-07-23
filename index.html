@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Medicube</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+
+    <script src="firebase/reportpage.js" type="module"></script>
+    <script src="firebase/loginlogout.js" type="module"></script>
+    <script src=firebase/mainpage.js type="module"></script>  
+
+
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="nav-item"><img src="assets/home-icon-silhouette 1.png"></a>
+        <a href="" id="checkusertype" class="nav-item"><img src="assets/report 1.png"></a>
+        <a href="associatedlabs.html" class="nav-item"><img src="assets/microscope (1) 1.png"></a>
+        <a id="Login_button" class="nav-item"><img src="assets/add-user 1.png"></a>
+        <a id="out_Btn" class="nav-item"><img src="assets/logout.png"></a>
+    </nav>
+    <div id="section1">
+        <h1>Revolutionize your healthcare practices with MediCube</h1>
+
+        <h5>Teleport you <span>reports</span> from Lab to Tab</h5>
+        <button id="getstarted">Get started</button>
+        <img id="section1img" src="assets/6974925_4450-removebg-preview (1) 1.png">
+    </div>
+    <div id="section2">
+        <h1>Why Medicube?</h1>
+        <div id="topleft">
+            <p>Centralized access to medical test results</p>
+        </div>
+        <div id="topright">
+            <p>Improved understanding of health</p>
+        </div>
+        <div id="bottomleft">
+            <p>Reduced risk of lost or misplaced test results</p>
+        </div>
+        <div id="bottomright">
+            <p>Convenience</p>
+        </div>
+        <img src="/assets/plus-removebg-preview 1.png">
+    </div>
+    <div id="section3">
+        <h1>Who is it for?</h1>
+        <div id="usertypes">
+            <div class="user">
+                <img src="assets/Ellipse 9.png" class="userimg">
+                <div class="userinfo">
+                    Access your medical test results from various labs in one centralized location
+                </div>
+            </div>
+            <div class="user">
+                <img src="assets/user.jpeg" class="userimg">
+                <div class="userinfo">
+                    Upload medical test results for patients who have used your services
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section4">
+        <h1>Associated Labs</h1>
+        <div id="labs">
+            <img class="labpic" src="assets/racelabs.jpg">
+            <img class="labpic" src="assets/diagno.png">
+            <img class="labpic" src="assets/shriramlabs.png">
+            <img class="labpic" src="assets/lifecarelabs.jpg">
+            <img class="labpic" src="assets/bharatlabs.png">
+        </div>
+        <div id="link"><a href="associatedlabs.html">See more<span><img src="assets/right-arrow (2).png"></span></a></div>
+    </div>
+    <footer>
+        <p>© 2023  Medicube | All rights Reserved</p>
+    </footer>
+</body>
+
+</html>

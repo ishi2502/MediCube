@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCube</title>
+    <link href="chooselogin.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+
+    <script src="firebase/reportpage.js" type="module"></script>
+    <script src="firebase/loginlogout.js" type="module"></script>
+
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-item"><img src="assets/home-icon-silhouette 1.png"></a>
+        <a href="" id="checkusertype" class="nav-item"><img src="assets/report 1.png"></a>
+        <a href="associatedlabs.html" class="nav-item"><img src="assets/microscope (1) 1.png"></a>
+        <a id="Login_button" class="nav-item"><img src="assets/add-user 1.png"></a>
+        <a id="out_Btn" class="nav-item"><img src="assets/logout.png"></a>
+    </nav>
+    <h1 id="heading">CHOOSE YOUR ROLE</h1>
+    <section>
+        <div id="loginchoicewrap">
+            <img src="assets/patientloginchoice.png">
+            <div id="logindesc">
+                <h2>Join as Patient</h2>
+                <p>Someone who receives medical tests from multiple labs and seeks a convenient way to manage their test results</p>
+                <button id=""  onclick="window.location.href='signupaspatient.html'"><span><img src="assets/arrow.png"></span></button>
+            </div>
+        </div>
+        <div id="loginchoicewrap">
+            <img src="assets/labloginchoice.png">
+            <div id="logindesc">
+                <h2>Join as Lab technician</h2>
+                <p>One that provides medical tests to patients and wants a way to efficiently share those test results with patients</p>
+                <button id="" onclick="window.location.href='signupaslab.html'"><span><img src="assets/arrow.png"></span></button>
+
+            </div>
+        </div>
+
+
+    </section>
+
+</body>
+</html>

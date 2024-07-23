@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCube</title>
+    <link rel="stylesheet" href="loginaspatient.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+
+    <script src="firebase/loginaspatient.js" type="module"></script>
+    <script src="firebase/reportpage.js" type="module"></script>
+    <script src="firebase/loginlogout.js" type="module"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-item"><img src="assets/home-icon-silhouette 1.png"></a>
+        <a href="" id="checkusertype" class="nav-item"><img src="assets/report 1.png"></a>
+        <a href="associatedlabs.html" class="nav-item"><img src="assets/microscope (1) 1.png"></a>
+        <a id="Login_button" class="nav-item"><img src="assets/add-user 1.png"></a>
+        <a id="out_Btn" class="nav-item"><img src="assets/logout.png"></a>
+    </nav>
+    
+    <div id="login-wrapper">
+        <img id="firstimg" src="assets/login1.png">
+        <form>
+            <h1>Patient Login</h1>
+            <input id="name" type="text" placeholder="Enter first name" required>
+            <input id="email" type="email" placeholder="Enter email id" required>
+            <input id="pswrd" type="password" placeholder="Enter password" required>
+            <!-- <span id="frgtpswrd">Forgot password?</span> -->
+            <button id="login-btn">Login</button>
+            <a href="signupaspatient.html">Create new account</a>
+        </form>
+        <img id="secondimg" src="assets/login2.png">
+    </div>
+</body>
+</html>

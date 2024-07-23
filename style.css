@@ -1,0 +1,374 @@
+/* .............................Navbar............................. */
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background-color: #E6851A;
+    height: 100vh;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.nav-item img {
+    height: 2rem;
+    width: 2rem;
+}
+
+#section1 {
+    position: relative;
+    margin-left: 4rem;
+    height: 100vh;
+}
+
+#logoimg{
+    height:5em;
+    width: 5rem;
+    margin:2rem 0 40rem 4rem;
+}
+
+#section1img {
+    position: absolute;
+    height: 60vh;
+    width: 50vw;
+    top: 35vh;
+    right: 0vw;
+    bottom: 0vh;
+}
+
+#section1 h1 {
+    color: #555BA5;
+    font-weight: 700;
+    font-size: 4rem;
+    margin:5rem 0 0 4rem;
+    width:50%;
+}
+
+#section1 h5 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin:2rem 0 0 4rem;
+}
+
+#section1 h5 span {
+    color: #E6851A;
+}
+
+#section1 button {
+    background-color: #555BA5;
+    color: white;
+    border-radius: 10px;
+    height: 3rem;
+    width: 9rem;
+    margin:2rem 0 0 4rem;
+    font-size: larger;
+    border: none;
+}
+
+#section1 button:hover {
+    cursor: pointer;
+    background-color: #E6851A;
+}
+
+#section2 {
+    position: relative;
+    margin-top: 10vh;
+    height: 100vh;
+    width: 90vw;
+    margin-left: 4rem;
+}
+
+#section2 h1,
+#section3 h1,
+#section4 h1 {
+    color: #E6851A;
+    text-align: center;
+    font-size: 3rem;
+    margin-left: 7vw;
+}
+
+#section2 h1{
+    
+    text-align: center;
+}
+
+#section2 div {
+    position: absolute;
+    background-color: #555BA5;
+    height: 20vh;
+    width: 20vw;
+    padding: 2rem;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#topleft {
+    position: absolute;
+    border-radius: 0 0 20% 0;
+    top: 20vh;
+    left: 20vw;
+}
+
+#topright {
+    position: absolute;
+    border-radius: 0 0 0 20%;
+    top: 20vh;
+    left: 50vw;
+}
+
+#bottomleft {
+    position: absolute;
+    border-radius: 0 20% 0 0;
+    top: 60vh;
+    left: 20vw;
+}
+
+#bottomright {
+    position: absolute;
+    border-radius: 20% 0 0 0;
+    top: 60vh;
+    left: 50vw;
+}
+
+#section2 img {
+    position: absolute;
+    height: 20vh;
+    width: 12vw;
+    top: 44vh;
+    left: 42vw;
+}
+
+#section2 p{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#section3 {
+    margin-top: 10vh;
+    width: 90vw;
+    margin-left: 4rem;
+}
+
+#section3 #usertypes {
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+    margin-top: 10vh;
+}
+
+#usertypes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#usertypes .user {
+    border: 2px solid #555BA5;
+    border-radius: 20px;
+}
+
+.userimg {
+    height: 33vh;
+    width: 20rem;
+    border-radius: 20px;
+}
+
+.userinfo {
+    height: 25vh;
+    width:20rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 1rem;
+    background-color: #555BA5;
+    border-radius: 0 0 14px 14px;
+}
+
+#section4 {
+    width: 90vw;
+    margin-left: 2rem;
+    margin-top: 5vh;
+    
+}
+
+#section4 #labs {
+    display: flex;
+    flex-direction: row;
+    gap: 8vh;
+    justify-content: center;
+    margin-top: 13vh;
+    flex-wrap: wrap;
+}
+
+.labpic {
+    height: 25vh;
+    width: 10rem;
+}
+
+#link {
+    color: #E6851A;
+    display: flex;
+    margin: 2rem 0;
+    justify-content: flex-end;
+    font-weight: 700;
+    font-size: larger;
+
+}
+
+#link:hover {
+    cursor: pointer;
+}
+
+#link span img {
+    height: 1rem;
+    width: 1rem;
+}
+
+footer {
+    border-top: 0.2rem solid #555BA5;
+    background-color: #555BA5;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    padding: 0.3rem;
+}
+
+
+@media screen and (max-width: 800px){
+    nav{
+        width:40px;
+        position: fixed;
+        overflow-y: hidden;
+    }
+
+    #section2 h1, #section3 h1, #section4 h1 {
+        font-size: 2.1rem;
+        margin: 2rem 0;
+    }
+
+    #section1 h1{
+        font-size: 3rem;
+        width:100%;
+    }
+
+    #section1 h5{
+        font-size: 2rem;
+    }
+
+    #section1 img{
+        height: 30vh;
+        width: 60vw;
+        top: 65vh;
+        bottom: 0vh;
+        left: 10vw
+    }
+
+    #section2{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:auto;
+        margin-left: 3rem;
+    }
+        
+    #section2 div{
+        position:static;
+        height: 12vh;
+        width: 60vw;
+        padding: 1rem;
+        margin: 0.5rem 0;
+    }
+    
+    #section2 p{
+        font-size:1.2rem;
+    }
+
+    #topleft, #topright, #bottomleft, #bottomright{
+        border-radius: 1rem;
+    }
+
+    #section2 img{
+        display:none;
+    }
+
+    #section3{
+        margin-left: 2rem;
+        margin-top: 0;
+    }
+
+    .userimg{
+        height: 23vh;
+        width: 15rem;
+    }
+
+    .userinfo{
+        height:20vh;
+        padding: 0.5rem;
+        width:15rem;
+    }
+
+    #section4 #labs{
+        gap: 4vh;
+        margin-top: 8vh;
+    }
+
+    #labs img{
+        height: 20vh;
+        width:20vh;
+    }
+
+    footer{
+        padding-left: 1.5rem;
+    }
+
+}
+
+
+@media screen and (max-width: 500px){
+    #section1 h1{
+        font-size: 2.5rem;
+        margin:5rem 0 0 0rem;
+    }
+
+    #section1 h5{
+        font-size: 1rem;
+        margin:2rem 0 0 0rem;
+    }
+
+    #section1 button{
+        margin:2rem 0 0 0rem;
+    }
+
+}

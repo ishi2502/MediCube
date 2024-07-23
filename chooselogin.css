@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*{
+    margin:0;
+    padding:0;
+    /* outline: 1px solid black; */
+    /* outline:1px solid black; */
+}
+
+a{
+    cursor: pointer;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    --primary-clr:#E6851A;
+    --sec-clr:#555BA5;
+}
+
+
+nav{
+    display:flex;
+    flex-direction: column;
+    gap:4rem;
+    background-color: #E6851A;
+    height:100vh;
+    width:50px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+}
+.nav-item img{
+    height:2rem;
+    width:2rem;
+}
+#heading{
+    text-align: center;
+    margin-left: 50px;
+    padding:4rem 0;
+    /* margin-bottom: 1rem; */
+    color:#E6851A;
+    font-size: 3rem
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:6rem;
+    /* margin: auto; */
+    /* height:100vh; */
+    flex-wrap: wrap;
+    margin: 0 0 20px 50px;
+}
+/* section img{
+    height:30%;
+    width:20%;
+} */
+#loginchoicewrap{
+    border: 0.1rem solid var(--sec-clr);
+    padding: 2rem 0 0 0 ;
+    border-radius: 1rem;
+    width:20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin:2rem;
+}
+
+#loginchoicewrap img{
+    height:12rem;
+    width:12rem;
+}
+
+#logindesc{
+    background-color: var(--sec-clr);
+    width:18rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    color:white;
+}
+
+#logindesc h2{
+    color:var(--primary-clr);
+    margin: 0.5rem 0;
+}
+
+#logindesc p{
+    margin-bottom: 1.5rem;
+}
+
+#logindesc button{
+    border-radius: 50%;
+    padding: 0.7rem;
+    border: none;
+    background-color: var(--primary-clr);
+    position: absolute;
+    left:40%;
+    bottom:-2rem;
+}
+
+#logindesc button img{
+    height:2rem;
+    width:2rem
+}
+
+#logindesc button{
+    cursor: pointer;
+}
+
+@media screen  and (max-width:800px){
+        
+    nav {
+        width: 40px;
+        position: fixed;
+        overflow-y: hidden;
+    }
+
+}
+
+@media screen and (max-width: 420px)
+{
+    #heading{
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+    section{
+        gap:1rem;
+    }
+    #loginchoicewrap{
+        width:17rem;
+    }
+    #logindesc{
+        width:15rem;
+    }
+    #logindesc h2{
+        margin:0;
+    }
+}
